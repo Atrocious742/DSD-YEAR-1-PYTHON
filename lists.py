@@ -1,16 +1,42 @@
-songs = input("what are your top 5 favourite songs "). split()
-#list and print your top 5 songs.  
-top5 = [songs]
-print(top5)
-def songadditionordeletion():
-    print("would you like to add a song:")
-    print("1 for add song")
-    print("2 for delete song ")
-    add = int(input("1 or 2: "))
-    if add == 1:
-        top5.append(input("what song would you like to add: "))
-        print(top5)
-        songadditionordeletion()
-    elif add == 2:
-        top5.remove(input("what is there number  "))
-        
+energy_levels = ["sleep inertia" , "morning peak" , "afternoon slump" , "seccond wind" , "winding down"
+                ]
+usernames = ["Atrocious742" , "vipervipes189" , "TTV_Jake" , "XoptimalninjaX" , "TTVWest"
+            ]
+step_count = ["4000" , "1320" "2400" , "3200" , "100"
+            ]
+
+print(energy_levels)
+print(usernames)
+print(step_count)
+print("........................................")
+print(energy_levels[0])
+print(energy_levels[len(energy_levels) // 2])
+print(energy_levels[-1])
+print("........................................")
+print(usernames[0])
+print(usernames[len(usernames) // 2])
+print(usernames[-1])
+print("........................................")
+print(step_count[0])
+print(step_count[len(step_count) // 2])
+print(step_count[-1])
+
+add_energy = energy_levels.append(input("what would you like to add to energy levels: "))
+add_usernames = usernames.append(input("what would you like to add to usernames: "))
+add_steps = step_count.append(input("what number of steps would you like to add to step count: ")) 
+
+print(energy_levels)
+print(usernames)
+print(step_count)
+print("........................................")
+print(energy_levels[0])
+print(energy_levels[len(energy_levels) // 2])
+print(energy_levels[-1])
+print("........................................")
+print(usernames[0])
+print(usernames[len(usernames) // 2])
+print(usernames[-1])
+print("........................................")
+print(step_count[0])
+print(step_count[len(step_count) // 2])
+print(step_count[-1])
